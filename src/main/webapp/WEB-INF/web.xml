@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        version="3.0">
+
+    <welcome-file-list>
+        <welcome-file>Home.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.lms.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.lms.servlets.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Application </servlet-name>
+        <servlet-class>com.lms.servlets.ApplicationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Application</servlet-name>
+        <url-pattern>/application</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>approveReject </servlet-name>
+    <servlet-class>com.lms.servlets.ApproveRejectServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>approveReject</servlet-name>
+        <url-pattern>/approveRejectServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>com.lms.servlets.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FileUpload</servlet-name>
+        <servlet-class>com.lms.servlets.FileUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUpload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SignUpOnLoadServlet</servlet-name>
+        <servlet-class>com.lms.servlets.SignUpOnLoadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpOnLoadServlet</servlet-name>
+        <url-pattern>/managerNames</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.lms.servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+</web-app>
